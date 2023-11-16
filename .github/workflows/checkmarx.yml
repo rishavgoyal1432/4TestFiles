@@ -42,7 +42,7 @@ jobs:
       with:
         project: CxFlow Project
         team: CxServer
-        checkmarx_url: http://localhost
+        checkmarx_url: https://9536905e17060e.lhr.life
         checkmarx_username: rishavgoyal1432
         checkmarx_password: Rishav@2698
         checkmarx_client_secret: 014DF517-39D1-4453-B7B3-9930C563627C

@@ -1,0 +1,36 @@
+name: Checkmarx One Scan and SARIF Report
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - dev
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  checkmarx_and_sarif:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Checkmarx One Scan
+        uses: checkmarx/ast-github-action@main
+        with:
+          base_uri: https://eu.ast.checkmarx.net
+          cx_client_id: GH Actions
+          cx_client_secret: iIUn2ikiPG5oWP2oM6Wrg7GdR9vOGkAL
+          cx_tenant: dp_wp_account
+          additional_params: --report-format sarif --output-path . --debug
+
+      - name: Upload SARIF Report
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: cx_result.sarif
+          env:
+          GITHUB_TOKEN: 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

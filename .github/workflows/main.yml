@@ -32,5 +32,3 @@ jobs:
         uses: github/codeql-action/upload-sarif@v2
         with:
           sarif_file: cx_result.sarif
-          env:
-          GITHUB_TOKEN: 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

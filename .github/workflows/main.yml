@@ -2,6 +2,7 @@ name: Checkmarx One Scan and SARIF Report
 
 on:
   push:
+  pull:
     branches:
       - main
       - master

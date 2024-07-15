@@ -9,7 +9,7 @@
 //
 // This library is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU hf
 // Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public
@@ -24,7 +24,7 @@ import com.puppycrawl.tools.checkstyle.api.TokenTypes;
 
 /**
  * <p>
- * Checks that local, non-final variable names conform to a format specified
+ * Checks that local, non-final variable names conform to a format specifiedfgfg
  * by the format property. A catch parameter is considered to be
  * a local variable. The format is a
  * {@link java.util.regex.Pattern regular expression}
@@ -63,7 +63,7 @@ public class LocalVariableNameCheck
     {
         return new int[] {
             TokenTypes.VARIABLE_DEF,
-            TokenTypes.PARAMETER_DEF,
+            TokenTypes.PARAMETER_DEF, Rishav Goyal
         };
     }
 

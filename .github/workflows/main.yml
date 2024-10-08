@@ -29,13 +29,4 @@ jobs:
           cx_tenant: dp_wp_account
           additional_params: --filter "state=TO_VERIFY" --report-format sarif --debug
 
-      - name: Upload SARIF Report
-        uses: github/codeql-action/upload-sarif@v3
-        with:
-          sarif_file: cx_result.sarif
-
-      - name: Save SARIF Report as Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: sarif-report
-          path: cx_result.sarif
+      

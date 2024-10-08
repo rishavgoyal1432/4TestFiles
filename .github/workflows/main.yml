@@ -27,6 +27,6 @@ jobs:
           cx_client_id: GH Actions
           cx_client_secret: Hl7mTEeRFOrvm0v8JRcwM0h0kuCJBUw3
           cx_tenant: dp_wp_account
-          additional_params: --filter "state=TO_VERIFY" --report-format sarif --debug
+          additional_params: --filter "state=TO_VERIFY" --report-format sarif --debug 
 
       

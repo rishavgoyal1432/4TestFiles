@@ -1,5 +1,5 @@
 name: Checkmarx One Scan and SARIF Report
-
+  
 on:
   push:
   pull_request:

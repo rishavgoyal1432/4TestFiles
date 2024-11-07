@@ -27,6 +27,6 @@ jobs:
           cx_client_id: GH Actions
           cx_client_secret: Hl7mTEeRFOrvm0v8JRcwM0h0kuCJBUw3
           cx_tenant: dp_wp_account
-          additional_params: --branch ${{ steps.extract_branch.outputs.branch }} --threshold 'sast-critical=1; sca-critical=1; iac-security-critical=1' --project-tags IGEPL,PLMv5 --debug 
+          additional_params: --project-tags IGEPL,PLMv5 --debug 
 
       

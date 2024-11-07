@@ -21,12 +21,12 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Checkmarx One Scan
-        uses: checkmarx/ast-github-action@main
+        uses: checkmarx/ast-github-action@f0869bd1a37fddc06499a096101e6c900e815d81
         with:
           base_uri: https://eu.ast.checkmarx.net
           cx_client_id: GH Actions
           cx_client_secret: Hl7mTEeRFOrvm0v8JRcwM0h0kuCJBUw3
           cx_tenant: dp_wp_account
-          additional_params: --filter "state=TO_VERIFY" --report-format sarif --debug 
+          additional_params: --sast-filter !**/**,Sources/**,Assembly/**,FunctionalTests/** --branch ${{ steps.extract_branch.outputs.branch }} --threshold 'sast-critical=1; sca-critical=1; iac-security-critical=1' --project-tags IGEPL,PLMv5 --debug 
 
       

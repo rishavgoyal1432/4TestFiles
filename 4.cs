@@ -3,7 +3,7 @@ namespace ns1
 
     class WebPage
     {
-                public virtual void foo()
+                public virtual void foo()  
                 {
                                 string s = "100002";
                                 string s2 = "999999";

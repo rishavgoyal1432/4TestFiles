@@ -6,7 +6,7 @@ namespace ns1
                 public virtual void foo()  
                 {
                                 string s = "100002";
-                                string s2 = "999999";
+                                string s2 = "999999";kkl
                 }
     }
 

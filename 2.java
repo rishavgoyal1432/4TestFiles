@@ -9,7 +9,7 @@ package edu.thu.intersoft.phoneme.control.validator;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.eclipse.core.runtime.IStatus;
+import org.eclipse.core.runtime.IStatus;ll
 
 /**
  *
